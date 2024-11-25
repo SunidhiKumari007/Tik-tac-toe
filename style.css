@@ -1,0 +1,131 @@
+/* Resetting and basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96); /* Blue gradient background */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    border: 2px solid #b0c4de;
+}
+
+h1 {
+    color: #3f2b96;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.name-inputs {
+    margin-bottom: 20px;
+}
+
+.name-inputs input {
+    padding: 10px;
+    font-size: 1em;
+    width: 45%;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border 0.3s;
+    background-color: #e3f2fd; /* Light blue input background */
+    color: #1e3a8a;
+}
+
+.name-inputs input:focus {
+    border: 1px solid #4a90e2; /* Darker blue on focus */
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4a90e2; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357abd; /* Darker blue on hover */
+}
+
+/* Styling for assignments and status */
+.assignments, .status {
+    font-size: 1.1em;
+    color: #333;
+    margin: 15px 0;
+    color: #1e3a8a; /* Darker blue text */
+    background-color: #d1e8ff; /* Light blue background */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Game board styling */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 15px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #bbdefb; /* Light blue for cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1e3a8a; /* Dark blue text for X/O */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.cell:hover {
+    background-color: #90caf9; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+}
+
+.cell:active {
+    background-color: #4a90e2; /* Even darker blue when active */
+}
+
+/* Scoreboard styling */
+.scoreboard {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4a90e2; /* Blue scoreboard background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard h3 {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.scoreboard p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
